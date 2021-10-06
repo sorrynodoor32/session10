@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai10-1</title>
+    <style>
+        .form-tt{
+            width: 350px;
+            background-color: rgb(104, 235, 206);
+            padding: 10px;
+            box-shadow: 5px 5px 5px 5px lightgray;
+            box-sizing: border-box;
+        }
+        label{
+            float: left;
+            width: 100px;
+        }
+        form{
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        input, select{
+            margin-bottom: 10px;
+           
+        }
+        #btn{
+            border: none;
+            width: 130px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-tt">
+        <form action="#">
+            <label for="">Họ và tên:</label>
+            <input type="text" placeholder="Hãy nhập tên người dùng"><br>
+            <label for="">Tên tài khoản:</label>
+            <input type="text" name="" id=""><br>
+            <label for="">Email:</label>
+            <input type="Email"><br>
+            <label for="">Mật khẩu</label>
+            <input type="password"><br>
+            <label for="">Năm sinh:</label>
+            <input type="date"><br>
+            <label for="">Giới tính:</label>
+            <input type="radio" name="Gender"> Nam
+            <input type="radio"name="Gender"> Nữ
+            <br>
+            <label for="">Thành phố</label>
+            <select name="menu" id="">
+                <option value="">Đà Nẵng</option>
+                <option value="">Hồ Chí Minh</option>
+                <option value="">Hà Nội</option>
+            </select><br>
+            <input type="checkbox"> Tôi đã đọc hiểu các điều khoản.
+            <br>
+            <!-- <label>&nbsp;</label> -->
+            <!-- <input type="submit" value="Đăng kí" class="btn"> 
+            <input type="submit" value="Reset" class="btn">  -->
+            <input type="button" name="" id="btn" value="Đăng kí">
+            <input type="button" name="" id="btn" value="Reset">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+       label{
+           float:left;
+           width: 100px;
+       }
+       input, select {
+           margin-bottom: 10px;
+       }
+       .btn {
+           background-color: #16a358;
+           color: white;
+           padding: 8px 20px;
+           border-radius: 6px;
+           border: none;
+           box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+       }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Registration Form</legend>
+        <form action="http://www.google.com" method="GET/POST">
+            <label>Student ID *:</label>
+            <input type="text" placeholder="Input your ID" required>
+            <br>
+            <label for="Name">User Name:</label>
+            <input type="text" id="name">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password"> <br>
+            <label for="email">Email:</label>
+            <input type="Email"> <br>
+            <label for="">DOB:</label>
+            <input type="date"> <br>
+            <label for="">Phone</label>
+            <input type="tel" maxlength="10"> <br>
+            <label for="">Fee</label>
+            <input type="number" placeholder="Input number">
+            <br>
+            <label for="">Course:</label>
+            <input type="checkbox">Java
+            <input type="checkbox">JDBC
+            <input type="checkbox">ẸB
+            <input type="checkbox">JSP <br>
+            <label for="">Gender</label>
+            <input type="radio" name="Gender">Male
+            <input type="radio" name="Gender">Female <br>
+            <label for="">Qualification</label>
+            <select name="menu">
+                <option>B.Tech</option>
+                <option>A.Tech</option>
+                <option>C.Tech</option>
+            </select> <br>
+            <label>&nbsp;</label>
+            <input type="submit" value="OK" class="btn"> 
+        </form>
+    </fieldset>
+</body>
+</html>

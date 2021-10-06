@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <style>
+        .container {
+            display: flex;
+        }
+        .img {
+            width: 50%;
+        }
+        .img img{
+            width: 70%;
+            object-fit: cover;
+        }
+        .form-tt {
+            margin-top: 70px;
+            margin-left: -200px; 
+            /* box-sizing: border-box; */
+        }
+        input {
+            margin-bottom: 15px;
+            width: 100%;
+            padding: 5px 10px;
+            box-sizing: border-box;
+        }
+        form .name {
+            display: flex;
+            position: relative;
+        }
+        #lastname {
+            display: block;
+            margin-left: 20px;
+            padding-left: 30px;
+        }
+        #firstname {
+            padding-left: 30px;
+        }
+        #mail {
+            padding-left: 30px;
+        }
+        .phone {
+            display: flex;
+            position: relative;
+        }
+        #number {
+            display: block;
+            width: 30%;
+            padding-left: 30px;
+        }
+        #job {
+            padding-left: 30px;
+        }
+        .password {
+            display: flex;
+            position: relative;
+        }
+        .password #pass {
+            padding-left: 30px;
+        }
+        .password #cof-pass {
+            display: block;
+            margin-left: 20px;
+            padding-left: 30px;
+        }
+        .line {
+            text-align: center;
+            position: relative;
+            padding: 10px;
+        }
+        .line:before{
+            content:"";
+            width: 100%;
+            position: absolute;
+            border-top: 1px solid black;
+            top:50%;
+            left:0;
+            transform: translateY(-50%);
+        }
+        span {
+            display: inline-block;
+            padding: 10px; 
+            background-color: white;
+            position: relative;
+            z-index: 1;
+        }
+        #btn-crea {
+            background-color:rgb(0, 124, 255);
+            border: none;
+            outline: none;
+            border-radius: 2px;
+            color: white;
+            cursor: pointer;
+        }
+        #btn-face{
+            background-color: rgb(42, 93, 161);
+            border: none;
+            outline: none;
+            border-radius: 2px;
+            color: white;
+            cursor: pointer;
+        }
+        #btn-twitter{
+            background-color: rgb(0, 176, 239);
+            border: none;
+            outline: none;
+            border-radius: 2px;
+            cursor: pointer;
+            color: white;
+        }
+        p {
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+        }
+        .icon-person {
+            width: 30px;
+            position: absolute;
+            top: 5px;
+        }
+        .icon-person2 {
+            width: 30px;
+            position: absolute;
+            top: 5px;
+            left: 225px;
+        }
+        .mail {
+            position: relative;
+        }
+        .icon-mail {
+            width: 30px;
+            position: absolute;
+            top: 5px; 
+        }
+        .icon-phone {
+            width: 30px;
+            position: absolute;
+            top: 5px; 
+        }
+        .job {
+            position: relative;
+        }
+        .icon-job {
+            width: 30px;
+            position: absolute;
+            top: 5px; 
+        }
+        .icon-lock {
+            width: 30px;
+            position: absolute;
+            top: 5px; 
+        }
+        .icon-lock2 {
+            width: 30px;
+            position: absolute;
+            top: 5px;
+            left:225px; 
+        }
+        .facebook {
+            position: relative;
+        }
+        .icon-facebook {
+            position:absolute;
+            top:5px;
+            left: 120px;
+            color: white;
+        }
+        .twitter {
+            position: relative;
+        }
+        .icon-twitter {
+            position: absolute;
+            top:5px;
+            left: 130px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="img/Untitled.png" alt="">
+        </div>
+        <div class="form-tt">
+            <form action="" method="get">
+                <div class="name">
+                    <ion-icon class="icon-person" name="person"></ion-icon>
+                    <ion-icon class="icon-person2" name="person"></ion-icon>
+                    <input type="text" name="firstname" id="firstname" placeholder="First Name">
+                    <input type="text" name="lastname" id="lastname" placeholder="Last Name"> <br>
+                </div>
+                <div class="mail">
+                    <ion-icon class="icon-mail" name="mail"></ion-icon>
+                    <input type="mail" name="mail" id="mail" placeholder="Email Address">
+                </div>
+                <div class="phone">
+                    <ion-icon class="icon-phone" name="call"></ion-icon>
+                    <input type="number" name="number" id="number">
+                    <input type="text" name="phonenumber" id="phonenumber" placeholder="Phone Number"> <br>
+                </div>
+                <div class="job">
+                    <ion-icon class="icon-job" name="logo-ionitron"></ion-icon>
+                    <input type="text" name="job" id="job" placeholder="Choose your job"> <br>
+                </div>
+                <div class="password">
+                    <ion-icon class="icon-lock" name="lock-closed"></ion-icon>
+                    <ion-icon class="icon-lock2" name="lock-closed"></ion-icon>
+                    <input type="password" name="pass" id="pass"> 
+                    <input type="password" name="cof-pass" id="cof-pass">
+                </div>
+                <input type="submit" name="btn" id="btn-crea" value="Create your account">
+                <div class="line">
+                     <span>OR</span>
+                </div>
+                <div class="facebook">
+                    <ion-icon name="logo-facebook" class="icon-facebook"></ion-icon>
+                    <input type="submit" name="btn" id="btn-face" value="Continue with Facebook">
+                </div>
+                <div class="twitter">
+                    <ion-icon name="logo-twitter" class="icon-twitter"></ion-icon>
+                    <input type="submit" name="btn" id="btn-twitter" value="Continue with Twitter">
+                </div>
+                <p>Already Registered?
+                    <a href="#">Login</a>
+                </p> 
+            </form>
+        </div>
+    </div>
+</body>
+</html>
